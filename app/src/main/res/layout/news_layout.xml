@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.zhangxian.newsviewer.View.SmartImage
+        android:id="@+id/iv_img"
+        android:layout_width="72dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="3dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_img"
+        android:text="我是新闻的标题"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/iv_img"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="我是新闻描述啊娃的撒的撒的撒打算发的是的哈哈饿饿哇嘎嘎嘎几乎噶啊嘎给我个大概多少故事发的 撒打算打算的啊"
+        android:textColor="#99000000"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_desc"
+        android:background="#ff0000"
+        android:text="专题"
+        android:textColor="#99000000"
+        android:textSize="10sp"
+
+        />
+</RelativeLayout>
